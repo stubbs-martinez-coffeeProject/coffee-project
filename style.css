@@ -1,9 +1,12 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
+body, html{
+    box-sizing: border-box;
+    background-image: url("/coffeeBG.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+.input-field{
+    max-height: 35px;
+}
+.mySelection{
+    height: 35px;
 }
