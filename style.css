@@ -10,3 +10,6 @@ body, html{
 .mySelection{
     height: 35px;
 }
+.hrStyle{
+    border: solid 1px;
+}
