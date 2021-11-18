@@ -14,11 +14,14 @@
 <!-- Need to work on displaying coffees -->
 <div class="container">
     <div class="row">
+<!-- left side of site -->
         <div class="col-6">
             <!-- this is where the list of coffees are -->
             <div class="row" id="coffees"></div>
         </div>
+<!-- right side of site -->
         <div class="col-6">
+<!-- form to search a coffee -->
             <form class="col">
                 <div class="form-group" id="searchWrapper">
                     <div class="col-auto">
@@ -31,13 +34,37 @@
                         </select>
                     <label for="roast-search" class="col-12 text-light mb-0 mt-1">Coffee Name</label>
                     </div>
-
                     <div class="col-auto">
                         <label class="sr-only" for="roast-search">Username</label>
                         <div class="input-group mb-2">
                             <input type="text" class="form-control" id="roast-search" placeholder="Search Coffee">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-search"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <hr class="hrStyle text-info">
+            <!-- form to add new coffee -->
+            <form class="col">
+                <div class="form-group" id="addWrapper">
+                    <div class="col-auto">
+                        <label for="new-roast-selection" class="col-12 text-light mb-0">Roast</label>
+                        <select id="new-roast-selection" class="col-12 mySelection">
+                            <option selected>all</option>
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                    </div>
+                    <div class="col-auto">
+                        <label for="roast-search" class="col-12 text-secondary mb-0 mt-1">Coffee Name</label>
+<!--                        <label class="sr-only" for="roast-search">Username</label>-->
+                        <div class="input-group mb-2">
+                            <input type="text" class="form-control" id="add-coffee" placeholder="Add Coffee">
+                            <div class="input-group-prepend">
+                                <div class="btn btn-sm btn-primary pt-2">Submit</div>
                             </div>
                         </div>
                     </div>
